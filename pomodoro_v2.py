@@ -28,7 +28,7 @@ def countdown():
     if timer > 0:
         timer -= 1
         timer_label.config(text=format_timer(timer))
-        timer_id = screen.after(10, countdown) 
+        timer_id = screen.after(1000, countdown) 
     else:
         running_timer = False
         play_sound()
